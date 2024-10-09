@@ -1,0 +1,45 @@
+<div class="row" style="border: 1px solid black;">
+          <div class="col-4">
+            <div class="fact-item">
+              <h4>100</h4>
+              <p>project completado</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="fact-item">
+              <h4>90</h4>
+              <p>Happy cliente</p>
+            </div>
+          </div>
+          <div class="col4"></div>
+          <div class="fact-item">
+            <h4>95</h4>
+            <p>Positive remenber</p>
+          </div>
+        </div>
+
+        <div class="container-lg py-5">
+      <div class="row justify-content-center align-items-center"></div>
+        <div class="col-lg-12">
+          <div class="section-titulo text-center">
+            <h2 class="fw-bold mb-5 ">Proyectos realizados</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="poryecto-item">
+            <img class="img-fluid w-100 img-thumbnail" src="/img/portfolio/1.jpg" alt="portafolio item">
+            <h3>Proyecto 1</h3>
+            <p><a href="#">live Demo</a></p>
+          </div>
+        </div>
+      </div><!--linea de contenido (proyectos)-->
+<!--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

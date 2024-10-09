@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>CodeSphere</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="//code.tidio.co/v7853exrzwr1uhas8djcxe6jlveqfcgg.js" async></script> -->
+
+
+  <style>
+    #testi {
+      box-shadow: 1px 1px 10px solid black;
+    }
+
+    .min-vh-85 {
+      min-height: 85vh;
+    }
+
+    .columna-home {
+      transition: 3s all;
+    }
+
+    .columna-home:hover {
+      opacity: 75%;
+      transition: 2s all;
+    }
+
+    /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+    @media (max-width:1200px) {
+      #servicios .cuadro-responsive-m{
+        margin-bottom: 2rem;
+      }
+    }
+
+    /*=========================MEDIA QUERIES PANTALLA SM================================*/
+    @media (max-width:768px) {}
+
+    /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+    @media (max-width: 576px) {
+      #Acerca .redes-sociales {
+        margin-bottom: 5rem !important;
+      }
+      #mensajes .contactos{
+        margin-bottom: 2rem !important;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
+    <div class="container-lg">
+      <a class="navbar-brand text-danger fs-3 fw-bold" href="">CodeSphere</a>
+      <!--barra-desplazante-->
+      <div class="dropdown">
+        <button class="btn btn-secondary bg-danger px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#Home">Home</a></li>
+          <li><a class="dropdown-item" href="#Acerca">Acerca nosotros</a></li>
+          <li><a class="dropdown-item" href="#servicios">servicios</a></li>
+          <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+          <li><a class="dropdown-item" href="#testimonios">Testimonios</a></li>
+          <li><a class="dropdown-item" href="#contacto">Contactanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><!--final de barra de navegacion-->
+
+  <section class="home" id="Home"><!--comienzo primera section-->
+    <div class="container-lg bg-white">
+      <div class="row bg-light min-vh-100 align-items-center align-content-center">
+
+        <div class="col-md-6 mt-4 order-md-last columna-home ">
+          <div class="home-img mt-5 ms-md-5">
+            <img class="rounded-circle mw-100 img-fluid" src="./img/desarrollador-ejemplo.svg" width="400px"
+              height="400px" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4">
+          <p class="text-muted m-0">Hello I'm</p>
+          <h1 class="fw-bold fs-1 text-danger">Web Designer</h1>
+          <h3 class="fs-4">CodeSphere</h3>
+          <p class="text-muted mt-4 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam,</p>
+          <div class="home-button mt-4">
+            <button class="btn btn-outline-danger">Contactanos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--fin de primera section-->
+
+  <!--inicio section de estadisticas -->
+  <section class="about bg-white py-5" id="Acerca">
+    <div class="container-lg py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Acerca de nosotros</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-6 mb-sm-5 ">
+          <div class="about-text">
+            <h3 class="fs-4 mb-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. </p>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fw-bold fs-1">100</h4>
+                <p class="text-muted">Proyectos completados</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fw-bold fs-1">95</h4>
+                <p class="text-muted">Clientes felices</p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fw-bold fs-1">90</h4>
+                <p class="text-muted">Vistas positivas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4" id="boton-descarga">
+            <div class="col-lg-12 d-flex align-items-center">
+              <a class="btn btn-danger px-3 me-5" href=""> Descargas cv</a>
+              <div class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook-f text-dark me-2"></i></a>
+                <a href="#"><i class="fab fa-twitter text-dark me-2"></i></a>
+                <a href="#"><i class="fab fa-instagram text-dark me-2"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in text-dark me-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="barras-progreso">
+            <h3 class="fs-6">Html</h3>
+            <div class="progress mb-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+              <div class="progress-bar bg-danger" style="width: 25%"></div>
+            </div>
+          </div>
+
+          <div class="barras-progreso">
+            <h3 class="fs-6">Css</h3>
+            <div class="progress mb-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+              <div class="progress-bar bg-danger" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="barras-progreso">
+            <h3 class="fs-6">Javascripts</h3>
+            <div class="progress mb-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+              <div class="progress-bar bg-danger" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="barras-progreso">
+            <h3 class="fs-6">Bootstrap</h3>
+            <div class="progress mb-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+              <div class="progress-bar bg-danger" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="barras-progreso">
+            <h3 class="fs-6">Python</h3>
+            <div class="progress mb-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+              <div class="progress-bar bg-danger" style="width: 85%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!--section de estadisticas final-->
+
+  <!--------inicio section se servicios---------->
+  <section class="servicios py-5 " id="servicios">
+    <div class="container-lg pt-4">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-12 ">
+          <div class="section-titulo text-center">
+            <h2 class="fw-bold text-center">
+              Lo que hacemos
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!--linea de contenido de servicios-->
+      <div class="row text-center min-vh-85 align-content-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="item-servicios shadow-sm p-4 rounded bg-white">
+            <div class="iconos mb-2">
+              <i class="fas fa-code text-danger fs-2"></i>
+            </div>
+            <h3>Web development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 cuadro-responsive-m">
+          <div class="item-servicios shadow-sm p-4 rounded bg-white">
+            <div class="iconos mb-2">
+              <i class="fas fa-lightbulb text-danger fs-2"></i>
+            </div>
+            <h3>Creative Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="item-servicios shadow-sm p-4 rounded bg-white">
+            <div class="iconos mb-2">
+              <i class="fas fa-image text-danger fs-2"></i>
+            </div>
+            <h3>Web development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- fin section se servicios-->
+
+  <!--inicio section proyectos realizados-->
+  <section class="proyectos">
+    <div class="container-lg py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5" id="proyectos"> Proyecto Realizados</h2>
+          </div>
+        </div>
+      </div>
+      <!----linea de contenido---->
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/1.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/2.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/3.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/4.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/5.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="proyecto-item">
+            <img src="./img/portfolio/6.jpg" class="w-100 img-thumbnail" alt="">
+            <h3 class="text-capitalize fs-5 my-2">Team Section</h3>
+            <p class="mb-4"><a class="text-danger text-decoration-none" href="#">Live Demo</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!--fin section proyectos realizados-->
+
+  <!--inicio section disponible (CodeSphere)-->
+  <section class="freelancing bg-danger py-5">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="text-light fs-5">Necesitas un proyecto ?</p>
+          <h2 class="fs1 text-white mb-4">Estoy disponible para proyectos de Frelancer</h2>
+          <a href="#account" class="btn btn-outline-light" id="testimonios">Contactame</a>
+        </div>
+      </div>
+    </div>
+  </section><!--fin section disponible (CodeSphere)-->
+
+  <!--testimonios-->
+  <section class="testimonios py-5 ">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2 class="fw-bold mb-5 text-center">Testimonios</h2>
+          </div>
+        </div>
+      </div>
+      <!--linea de contenidos-->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+
+          <div id="carouselExampleIndicators" class="carousel slide shadow-sm rounded">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner p-1">
+              <!--testimonios usuarios comienzo-->
+              <div class="testimonios-item carousel-item active bg-white p-4" id="testi">
+                <div class="autor-testimonio d-flex">
+                  <img src="./img/testimonial/1.jpg" class="img-fluid img-thumbnail rounded-circle me-3" alt="">
+                  <div class="autor ms-3">
+                    <h3 class="fs-6 mt-2">Juanito alimaña</h3>
+                    <p class="text-muted">Seo manage</p>
+                  </div>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et
+                  dolore magna aliqua. </p>
+                <div class="rating">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+              </div>
+              <!--testimonios usuarios final-->
+              <!--testimonios usuarios comienzo-->
+              <div class="testimonios-item carousel-item active bg-white shadow-sm rounded p-4">
+                <div class="autor-testimonio d-flex">
+                  <img src="./img/testimonial/2.jpg" class="img-fluid img-thumbnail rounded-circle me-3" alt="">
+                  <div class="autor ms-3">
+                    <h3 class="fs-6 mt-2">Juanito alimaña</h3>
+                    <p class="text-muted">Seo manage</p>
+                  </div>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et
+                  dolore magna aliqua. </p>
+                <div class="rating">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+              </div>
+              <!--testimonios usuarios final-->
+              <!--testimonios usuarios comienzo-->
+              <div class="testimonios-item carousel-item active bg-white shadow-sm rounded p-4">
+                <div class="autor-testimonio d-flex">
+                  <img src="./img/testimonial/3.jpg" class="img-fluid img-thumbnail rounded-circle me-3" alt="">
+                  <div class="autor ms-3">
+                    <h3 class="fs-6 mt-2">Juanito alimaña</h3>
+                    <p class="text-muted">Seo manage</p>
+                  </div>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et
+                  dolore magna aliqua. </p>
+                <div class="rating">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                </div>
+              </div>
+              <!--testimonios usuarios final-->
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </section><!--fin section de testimonios-->
+
+  <!--inicio section contactos-->
+  <section class="mensajes py-5" id="mensajes">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fs-2">
+          <h3 class="fw-bold text-center mb-5">Contactanos!</h3>
+        </div>
+      </div>
+
+      <!--Comienzo de linea de contenido-->
+      <div class="row min-vh-90 bg-sucess" id="contacto">
+        <div class="col-md-5 contactos">
+          <div class="item-contactos d-flex mb-3">
+            <div class="iconos">
+              <i class="fas fa-envelope text-danger"></i>
+            </div>
+            <div class="texto ms-3">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-muted">mAcp2005_2@outlook.es</p>
+            </div>
+          </div>
+          <!------->
+          <div class="item-contactos d-flex mb-3">
+            <div class="iconos">
+              <i class="fas fa-phone text-danger"></i>
+            </div>
+            <div class="texto ms-3">
+              <h3 class="fs-4">Telefono</h3>
+              <p class="text-muted">+57 3008650664</p>
+            </div>
+          </div>
+          <!------->
+          <div class="item-contactos d-flex ">
+            <div class="iconos">
+              <i class="fas fa-map-marker-alt text-danger"></i>
+            </div>
+            <div class="texto ms-3">
+              <h3 class="fs-5">Dirreccion</h3>
+              <p class="text-muted">km1 turbaco - Via trocal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="form-contacto">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                </div>
+              </div>
+              <!-------->
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+              </div>
+              <!-------->
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <textarea type="text" class="form-control" rows="5" id="exampleFormControlInput1"
+                    placeholder="Tu mensaje"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <button type="submit" class="btn btn-danger" href="">Enviar mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--inicio section contactos-->
+  </section>
+  <p class="text-center text-muted mt-0 mb-2">@CodeSphere</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '67069aeca2382c6fe9075dd8' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+</body>
+
+</html>
